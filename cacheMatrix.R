@@ -20,7 +20,7 @@ cache.solve <- function(x) {
     return(m)
   }
   data <- x$get()
-  m <- solve(data )
+  m <- solve(data, fraction = TRUE)
   x$setinverse(m)
   m
 }
